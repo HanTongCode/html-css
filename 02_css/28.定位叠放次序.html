@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1,
+      .box2,
+      .box3 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+      }
+      .box1 {
+        background-color: aqua;
+        z-index: -1;
+      }
+      .box2 {
+        background-color: blueviolet;
+      }
+      .box3 {
+        background-color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    z-index
+    如果没有指定z-index,则后来者居上
+    数字后面不能加单位
+    只有定位的盒子才有z-index属性
+   -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </body>
+</html>

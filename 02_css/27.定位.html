@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 5000px;
+      }
+      .box1 {
+        position: relative;
+        top: 100px;
+        left: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+      .son {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 290px;
+        left: 290px;
+        background-color: black;
+      }
+      .father {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        background-color: aqua;
+        top: 500px;
+      }
+      .fixed {
+        position: fixed;
+        height: 400px;
+        width: 400px;
+        top: 0;
+        right: 0;
+        background-color: aquamarine;
+      }
+      .sticky {
+        margin: 500px 0;
+        position: sticky;
+        top: 100px;
+        width: 120px;
+        height: 10px;
+        background-color: #ed4ca4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    浮动可以让多个块级盒子一行显示
+    定位让盒子自由的在某个盒子内移动位置或者固定屏幕中的某个位置，并且可以压住其他盒子
+      定位=定位模式+边偏移
+    定位模式
+      static 静态定位
+      relative 相对定位
+      absolute 绝对定位
+      fixed 固定定位
+    边偏移
+      top/bottom/left/right
+   -->
+
+    <!-- 
+    静态定位
+      按照标准流摆放位置，没有偏移量
+    -->
+    <!-- 
+      相对定位
+      相对于自身位置移动,原来的标准流位置继续占有
+     -->
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+    <!-- 
+      绝对定位
+      相对于祖先元素
+      如果没有祖先元素或者祖先元素没有定位,则以浏览器为准
+      如果祖先元素有定位,则以最近的有定位的祖先元素为参考
+      会脱离标标准流
+     -->
+    <!-- <div class="father">
+      <div class="son">son</div>
+    </div> -->
+    <!-- 
+      固定定位
+      不会改变位置,以浏览器的可视窗口为标准
+      跟父级元素无关
+      不占用原来的位置
+     -->
+    <!-- <div class="fixed"></div> -->
+    <!-- 
+      粘性定位
+      sticky
+      以浏览器的可视窗口为参照点
+      占有原来的位置
+      必须添加偏移量
+     -->
+    <div class="sticky"></div>
+  </body>
+</html>

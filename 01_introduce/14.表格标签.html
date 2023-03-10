@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+      table标签用于定义表格的标签
+      
+      tr是表格的行，必须嵌套在table标签中
+      td是表格的单元格，必须嵌套在tr中
+      th是表头单元格，文字会加粗居中显示
+
+       -属性(这些属性要写在table标签中)
+          align 属性值：left，center，right 规定表格相对周围元素的对齐方式
+          border 属性值：1或者“”，规定边框显示
+          cellpadding 属性值：像素 ，规定单元边沿与其内容之间的空白，默认为1像素
+          cellspacing 属性值：像素， 规定单元格之间的空白
+          width 属性值：像素值或百分比，规定表格的宽度
+
+      合并单元格
+       -跨行合并 rowspan
+       -跨列合并 colspan
+     -->
+    <table
+      align="center"
+      width="80%"
+      border="1"
+      cellspacing="0"
+      cellpadding="1 "
+    >
+      <tr>
+        <th>水果</th>
+        <th>蔬菜</th>
+        <th>饮料</th>
+      </tr>
+      <tr>
+        <td>苹果</td>
+        <td>西红柿</td>
+        <td>果汁</td>
+      </tr>
+    </table>
+  </body>
+</html>

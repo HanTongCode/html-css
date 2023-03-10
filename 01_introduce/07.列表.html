@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+      列表
+        -有序列表
+          ol里面只能嵌套li
+          li可以容纳所有元素
+        -无序列表
+          ul里面只能嵌套li
+          li可以容纳所有元素
+        -定义列表
+          dl里面只能包含dt和dd
+     -->
+
+    <!-- 有序列表 -->
+    <ol>
+      <li>香蕉</li>
+      <li>葡萄</li>
+      <li>苹果</li>
+    </ol>
+    <!-- 
+      无序列表
+     -->
+    <ul>
+      <li>香蕉</li>
+      <li>葡萄</li>
+      <li>苹果</li>
+    </ul>
+    <!-- 
+      定义列表
+     -->
+    <dl>
+      <dt>定义列表</dt>
+      <dd>这是我的定义列表</dd>
+      <dd>这是我的定义列表</dd>
+      <dd>这是我的定义列表</dd>
+    </dl>
+
+    <!-- 
+      列表可以互相嵌套
+     -->
+    <ol>
+      <li>香蕉</li>
+      <li>
+        葡萄
+        <ol>
+          <li>
+            香蕉
+            <ol>
+              <li>香蕉</li>
+              <li>葡萄</li>
+              <li>苹果</li>
+            </ol>
+          </li>
+          <li>葡萄</li>
+          <li>苹果</li>
+        </ol>
+      </li>
+      <li>苹果</li>
+    </ol>
+  </body>
+</html>

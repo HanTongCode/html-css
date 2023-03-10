@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+      表单目的是为了收集用户信息
+      表单包括表单域、表单控件、提示信息
+        表单域form将用户的信息提交到服务器
+        属性：
+          -action 属性值：url地址，用于指定接受并处理表单数据的服务器的url地址
+          -method 属性值：get/post，用于设置表单数据的提交方式
+          -name 属性值：名称，用于指定表单的名称，区分同一个页面中的多个表单域
+        
+          表单控件
+            -input 输入元素
+              label 标签
+              type属性：
+                -button，定义可点击按钮
+                -checkbox，定义复选框
+                -file，定义输入字段和“浏览”按钮，提供文件上传
+                -hidden，定义隐藏的输入字段
+                -image，定义图像形式的提交按钮
+                -password，定义密码字段
+                -radio，定义单选按钮
+                -reset，定义重置按钮
+                -submit，定义提交按钮
+                -text，定义单行的输入字段
+              name属性：
+                由用户自定义，定义input元素的名称
+              value属性
+                由用户自定义，定义input元素的值
+              checked属性
+                属性值：checked，规定input元素首次加载时被选中
+              maxlength属性
+                属性值：正整数，规定输入的最大长度
+            -select 下拉元素
+              至少包含一个option
+              selected打开页面选中
+            -textarea 文本域元素
+            
+     -->
+
+    <form action="" method="post" name="demo1">
+      <label for="usename">姓名:</label>
+      <input
+        id="usename"
+        type="text"
+        name="usename"
+        value="请输入用户名"
+        maxlength="6"
+      /><br />
+      <label for="pwd">密码:</label>
+      <input type="password" name="pwd" id="pwd" /> <br />
+      <!-- 
+        单选框设置了相同的name属性才能单选 
+        复选框也要设置相同的name属性
+        单选框和多选框可以设置checked属性，来规定页面打开时选中
+      -->
+      性别：<label for="man">男</label>
+      <input type="radio" id="man" name="sex" value="man" checked />
+      <label for="woman">女</label>
+      <input id="woman" type="radio" name="sex" value="woman" /><br />
+      爱好：<label for="eat">吃</label>
+      <input type="checkbox" name="hobby" value="eat" id="eat" />
+      <label for="drink">喝</label>
+      <input type="checkbox" name="hobby" value="drink" id="drink" />
+      <label for="play">玩</label>
+      <input type="checkbox" name="hobby" value="play" id="play" /><br />
+      籍贯：<select name="" id="">
+        <option value="henan">河南</option>
+        <option value="jiangxi" selected>江西</option>
+        <option value="beijing">北京</option></select
+      ><br />
+      按钮：<input type="button" value="可点击按钮" /><br />
+      上传头像：<input type="file" /><br />
+      隐藏：<input type="hidden" value="隐藏了" /><br />
+      图像: <input type="image" src="./img/suolong.png" /><br />
+      介绍: <textarea name="" id="" cols="30" rows="10"></textarea><br />
+      重置：<input type="reset" />
+      <br />
+      提交：<input type="submit" value="免费注册" />
+    </form>
+  </body>
+</html>

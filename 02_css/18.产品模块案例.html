@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* 导航栏部分 */
+      .nav {
+        width: 1180px;
+        margin: 0 auto ;
+        height: 41px;
+        background-color: #fcfcfc;
+        border-top: 3px solid #ff8500;
+        border-bottom: 1px solid #edeef0;
+      }
+      .nav ol li {
+        /* width: 100px; */
+        
+        float: left;
+        list-style: none;
+      }
+      .nav ol li a{
+        display: block;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: gray;
+       
+      }
+      .nav ol li a:hover{
+        background-color: gray;
+        color: #edeef0;
+      }
+      /* 主体部分 */
+      .main {
+        width: 1180px;
+        margin: 0 auto;
+      }
+      /* .main a{
+        display: block;
+        
+        text-decoration: none;
+      } */
+      .main .box:hover{
+        box-shadow: 4px 4px 4px 4px rgb(203, 203, 203);
+        transform: translate(2px,2px);
+      }
+      .main .box{
+        margin-top: 10px;
+        width: 280px;
+        height: 360px;
+        background-color: rgb(219, 209, 209);
+        float: left;
+        margin-right: 20px;
+        /* border: 1px solid transparent ; */
+        border-radius: 10px;
+        color: rgb(50, 34, 34);
+      }
+      .main .last{
+        margin-right: 0;
+      }
+      img {
+        width: 280px;
+        height: 187px;
+        border-radius: 10px 10px 0 0 ;
+      }
+      
+      .review {
+        margin-top: 5px;
+        margin-left: 12px;
+        font-size: 14px;
+        margin-bottom: 40px;
+        text-indent: 2em;
+      }
+      .appraise {
+        margin-left: 12px;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+      .info {
+        margin-left: 12px;
+      }
+      .info h4{
+        display: inline;
+        font-size: 16px;
+      }
+      .info span {
+        float: right;
+        margin-right: 10px;
+        color: rgb(216, 87, 87);
+      }
+      .main .box .review:hover,.appraise:hover,.info h4:hover{
+        text-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ol>
+        <li><a href="#">设置首页</a></li>
+        <li><a href="#">手机新浪网</a></li></li>
+        <li><a href="#">新浪客户端</a></li>
+        <li><a href="#">博客</a></li>
+        <li><a href="#">微博</a></li>
+        <li><a href="#">关注我</a></li>
+      </ol>
+    </div>
+    <div class="main"> 
+      <div class="box first">
+        <img src="../01_introduce/img/suolong.png" alt="" />
+        <p class="review">
+          我当然知道，但是用不着你多管闲事，当我想成为最强的剑士时，早就把生死置之度外了
+        </p>
+        <div class="appraise">你要说我笨也没关系</div>
+        <div class="info"><h4>因为这是我自己选择的...</h4> <span>99.9元</span></div>
+      </div>
+      <div class="box">
+        <img src="../img/lufei.jpeg" alt="" />
+        <p class="review">
+          我必须变得更强，否则就无法保护伙伴们，就算他们并不强大我也需要他们在我身边啊
+        </p>
+        <div class="appraise">在这个动荡的时代中</div>
+        <div class="info"><h4>携带偶然与志向，问鼎天下...</h4> <span>99.9元</span></div>
+      </div>
+      <div class="box">
+        <img src="../img/shanzhi.webp" alt="" />
+        <p class="review">
+          大家都很相似呢,本想就这么活下去吧,却都是些痛苦的事,即使是这样,
+          只要生存下去就能够看到明天的,不是吗。
+        </p>
+        <div class="appraise">对女士要温柔点</div>
+        <div class="info"><h4>让我来教你真正的利益之道...</h4> <span>99.9元</span></div>
+      </div>
+      <div class="box last ">
+        <img src="../img/sp.webp" alt="" />
+        <p class="review">
+          我的身体根本不痛，痛的是不能行侠仗义的老夫的心。若能阻止这场战争，老夫万死不辞！
+        </p>
+        <div class="appraise">我的船长是海贼王</div>
+        <div class="info"><h4>岂会怕区区四皇?...</h4> <span>99.9元</span></div>
+      </div>
+    </div>
+  </body>
+</html>

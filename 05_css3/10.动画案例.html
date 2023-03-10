@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .map {
+        position: relative;
+      }
+      .map div[class^="demo"] {
+        display: block;
+        position: absolute;
+
+        top: 50px;
+        left: 50px;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        /* background-color: blue; */
+        /* border: 1px solid #009dfd; */
+        box-shadow: 0px 0px 12px #f30707;
+        /* transform-origin: center center; */
+        animation-name: move;
+        animation-duration: 0.6s;
+        animation-iteration-count: infinite;
+        /* background-color: #009dfd; */
+      }
+      .map .demo2 {
+        animation-delay: 0.2s;
+      }
+      .map .demo3 {
+        animation-delay: 1s;
+      }
+      @keyframes move {
+        0% {
+          width: 5px;
+          height: 5px;
+        }
+        /* 25% {
+          width: 8px;
+          height: 8px;
+          border-radius: 8px;
+        } */
+        70% {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+        }
+        100% {
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+        }
+      }
+      .shadow {
+        width: 20px;
+        height: 20px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="map">
+      <div class="demo1"></div>
+      <div class="demo2"></div>
+      <div class="demo3"></div>
+      <img src="../img/lufei.jpeg" alt="" srcset="" />
+    </div>
+    <div class="shadow"></div>
+  </body>
+</html>

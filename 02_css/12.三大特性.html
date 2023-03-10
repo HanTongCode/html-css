@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        color: red;
+      }
+      div {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      层叠性
+        样式冲突，就近原则
+      继承性
+        子标签会继承父标签的某些样式
+          text-
+          line-
+          font-
+          color
+      优先级
+        无穷大： ！important
+        1，0，0，0：行内样式
+        0，1，0，0：id选择器
+        0，0，1，0：类选择器/伪类选择器
+        0，0，0，1：元素选择器
+        0，0，0，0：继承/*
+      a标签有默认的样式
+     -->
+    <div>你好</div>
+    <div>
+      <p>龙生龙，逢生凤</p>
+    </div>
+    <!-- 
+      行高继承
+      font：12px/1.5 'Microsoft YaHei'
+      1.5指的是当前元素的1.5倍
+     -->
+  </body>
+</html>

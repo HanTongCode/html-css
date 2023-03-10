@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+        width: 600px;
+        height: 200px;
+        border: 1px solid #ccc;
+        transform-style: preserve-3d;
+        perspective: 500px;
+      }
+      div[class^="demo"] {
+        position: absolute;
+        width: 160px;
+        height: 100px;
+        background-color: aqua;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .box .demo1 {
+        left: 19px;
+        transform: translate(0, -50%) translateZ(101px) rotateY(-51deg);
+      }
+      .box .demo2 {
+        left: 50%;
+        transform: translate(-50%, -50%) translateZ(220px);
+      }
+      .box .demo3 {
+        left: 418px;
+        transform: translate(0, -50%) translateZ(80px) rotateY(50deg);
+      }
+      .box .demo4 {
+        left: 350px;
+        transform: translate(0, -50%) translateZ(4px) rotateY(-65deg);
+      }
+      .box .demo5 {
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .box .demo6 {
+        left: 64px;
+        transform: translate(0, -50%) translateZ(4px) rotateY(69deg);
+      }
+      .box:hover .demo1 {
+        animation-name: demo1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .box:hover .demo2 {
+        animation-name: demo2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .box:hover .demo3 {
+        animation-name: demo3;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .box:hover .demo4 {
+        animation-name: demo4;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .box:hover .demo5 {
+        animation-name: demo5;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .box:hover .demo6 {
+        animation-name: demo6;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes demo1 {
+        20% {
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(220px);
+        }
+        40% {
+          left: 418px;
+          transform: translate(0, -50%) translateZ(80px) rotateY(50deg);
+        }
+        60% {
+          left: 350px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(-65deg);
+        }
+        80% {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        100% {
+          left: 64px;
+          transform: translate(64px, -50%) translateZ(4px) rotateY(69deg);
+        }
+      }
+      @keyframes demo2 {
+        0% {
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(220px);
+        }
+        20% {
+          left: 418px;
+          transform: translate(0, -50%) translateZ(80px) rotateY(50deg);
+        }
+        40% {
+          left: 350px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(-65deg);
+        }
+        60% {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        80% {
+          left: 64px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(69deg);
+        }
+        100% {
+          left: 19px;
+          transform: translate(0, -50%) translateZ(101px) rotateY(-51deg);
+        }
+      }
+      @keyframes demo3 {
+        100% {
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(220px);
+        }
+        0% {
+          left: 418px;
+          transform: translate(0, -50%) translateZ(80px) rotateY(50deg);
+        }
+        20% {
+          left: 350px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(-65deg);
+        }
+        40% {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        60% {
+          left: 64px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(69deg);
+        }
+        80% {
+          left: 19px;
+          transform: translate(0, -50%) translateZ(101px) rotateY(-51deg);
+        }
+      }
+      @keyframes demo4 {
+        80% {
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(220px);
+        }
+        100% {
+          left: 418px;
+          transform: translate(0, -50%) translateZ(80px) rotateY(50deg);
+        }
+        0% {
+          left: 350px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(-65deg);
+        }
+        20% {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        40% {
+          left: 64px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(69deg);
+        }
+        60% {
+          left: 19px;
+          transform: translate(0, -50%) translateZ(101px) rotateY(-51deg);
+        }
+      }
+      @keyframes demo5 {
+        40% {
+          left: 19px;
+          transform: translate(0, -50%) translateZ(101px) rotateY(-51deg);
+        }
+        60% {
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(220px);
+        }
+
+        80% {
+          left: 418px;
+          transform: translate(0, -50%) translateZ(80px) rotateY(50deg);
+        }
+        100% {
+          left: 350px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(-65deg);
+        }
+        0% {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        20% {
+          left: 64px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(69deg);
+        }
+      }
+      @keyframes demo6 {
+        40% {
+          left: 50%;
+          transform: translate(-50%, -50%) translateZ(220px);
+        }
+        60% {
+          left: 418px;
+          transform: translate(0, -50%) translateZ(80px) rotateY(50deg);
+        }
+        80% {
+          left: 350px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(-65deg);
+        }
+        100% {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        0% {
+          left: 64px;
+          transform: translate(0, -50%) translateZ(4px) rotateY(69deg);
+        }
+        20% {
+          left: 19px;
+          transform: translate(0, -50%) translateZ(101px) rotateY(-51deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="demo1"><img src="../img/lufei.jpeg" alt="" /></div>
+      <div class="demo2"><img src="../img/shanzhi.webp" alt="" /></div>
+      <div class="demo3"><img src="../img/suolong.png" alt="" /></div>
+      <div class="demo4"><img src="../img/sp.webp" alt="" /></div>
+      <div class="demo5"><img src="../img/aisi.webp" alt="" /></div>
+      <div class="demo6"><img src="../img/nvdi.jpg" alt="" /></div>
+    </div>
+  </body>
+</html>

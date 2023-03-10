@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        margin: 0;
+      } */
+      .border {
+        width: 200px;
+        height: 40px;
+        background-color: red;
+        border-width: 5px;
+        /* 点线 */
+        /* border-style: dotted; */
+        /* 虚线 */
+        /* border-style: dashed; */
+        /* 实线 */
+        border-style: solid;
+        /* 隐藏 */
+        /* border-style: hidden; */
+        /* 无边框 */
+        /* border-style: none; */
+        border-color: pink;
+      }
+      .demo {
+        width: 200px;
+        height: 200px;
+        border: 1px solid blue;
+        border-top: 1px solid red;
+      }
+      .content {
+        width: 200px;
+        height: 40px;
+        background-color: red;
+        border-width: 5px;
+        /* 点线 */
+        /* border-style: dotted; */
+        /* 虚线 */
+        /* border-style: dashed; */
+        /* 实线 */
+        border-style: solid;
+        /* 隐藏 */
+        /* border-style: hidden; */
+        /* 无边框 */
+        /* border-style: none; */
+        border-color: pink;
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    盒子模型
+      border
+      content
+      padding
+      margin
+   -->
+    <!-- 
+    border
+      边框宽度
+        border-width
+      边框样式
+        border-style
+          none:无边框
+          hidden：隐藏边框
+          dotted：点线
+          dashed：虚线
+          solid：实线
+      边框颜色
+        border-color
+    -->
+    <div class="border"></div>
+    <div class="demo"></div>
+    <!-- 
+      内容
+      content
+        padding-left/right/top/bottom
+        padding会撑开盒子（宽度/高度减去padding）
+        一个值：上下左右
+        两个值：上下，左右
+        三个值：上，左右，下
+        四个值：上，右，下，左
+        如果盒子本身没有指定width/height属性，则此时padding不会撑开
+     -->
+    <div class="content">我是盒子的内容</div>
+    <span>你好</span>
+    <!-- 
+      margin 外边距
+     -->
+  </body>
+</html>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 版心 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* a标签 */
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  color: #c81623;
+}
+
+/* li标签 */
+li {
+  list-style: none;
+}
+
+/* 左浮动 */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 
+      第二种方式（内部样式表）
+       - 在head标签里面的style标签写样式
+       - 可以同时为多个标签设置样式
+       - 理论上可以放在html文档的任何地方，但一般会放在head标签中
+     -->
+    <style>
+      p {
+        color: green;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    css 层叠样式表
+    第一种方式（内联样式，行内样式）
+      -在标签内通过style属性设置
+      -只能对设置的标签生效
+   -->
+    <p style="color: blue; font-size: 40px">今天的天气有点冷</p>
+    <p style="background-color: red">今天的天气有点冷</p>
+  </body>
+</html>

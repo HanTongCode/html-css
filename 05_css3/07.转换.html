@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo1 {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        /* transform: translate(200px, 20px); */
+        /* 盒子自身宽度或者高度的50% */
+        /* transform: translate(50%, 50%); */
+        transition: all 3s;
+      }
+      .demo1:hover {
+        transform-origin: 0 0;
+        transform: rotate(360deg);
+      }
+      .demo {
+        width: 200px;
+        height: 20px;
+        background-color: #a78f8f;
+        position: relative;
+      }
+      .demo::after {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #e70a0a;
+        border-bottom: 1px solid #e60303;
+        transform: rotate(45deg);
+      }
+      .demo:hover::after {
+        transform: rotate(-135deg);
+      }
+      input {
+        position: relative;
+        width: 200px;
+        height: 20px;
+        outline: none;
+      }
+      input::after {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #e70a0a;
+        border-bottom: 1px solid #e60303;
+        transform: rotate(45deg);
+      }
+      .demo2 {
+        width: 220px;
+        height: 20px;
+        background-color: #e70a0a;
+        margin: 0 auto;
+        transform-origin: left bottom;
+        /* 缩放 */
+        /* transform: scale(2); */
+        /* transform: scale(2, 1); */
+      }
+      .demo2:hover {
+        transform: scale(2, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      transform
+        不会影响其他元素
+        对行内元素无效果
+      设置转换中心
+        transform-origin
+     -->
+    <div class="demo1"></div>
+    <div class="demo"></div>
+    <input type="text" name="" id="" />
+    <div class="demo2"></div>
+  </body>
+</html>

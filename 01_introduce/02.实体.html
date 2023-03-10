@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>实体</title>
+  </head>
+  <body>
+    <!-- 
+      在网页中编写多个空格回自动解析为一个空格
+     -->
+    <p>今天天气真 不错！</p>
+    <!-- 
+      在网页中遇到<>会解析为标签，如果没有结束标签，则后面的都是改标签类型
+     -->
+    <!-- <p>
+      a<b>c
+     </p> -->
+    <!-- 
+      在前后加空格解决
+      -->
+    <p>a < b > c</p>
+
+    <!-- 
+      特殊符号需要使用html的实体（转义字符）
+      实体的语法：
+        &实体的名字;
+          -空格： &nbsp;
+          -小于： &lt;
+          -大于： &gt;
+          -版权符号： &copy;
+     -->
+
+    <p>今天天气&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真好！</p>
+    <p>a&lt;b&gt;c</p>
+    <p>版权符号： &copy;</p>
+  </body>
+</html>

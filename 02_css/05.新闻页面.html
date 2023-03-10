@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3 {
+        text-align: center;
+        font-weight: normal;
+      }
+      .header {
+        text-align: center;
+        font-size: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .line {
+        height: 1px;
+        background-color: black;
+      }
+      h4 {
+        font-weight: normal;
+      }
+      .main {
+        text-indent: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>什么是闭包，为什么要用它？</h3>
+    <p class="header">
+      2019-07-03 16:31:47 来源:<a href="#">中国天气网</a>
+      <input type="text" value="请输入查询条件" /> <button>搜索</button>
+    </p>
+    <div class="line"></div>
+    <hr />
+    <h4>闭包有两个常用的用途</h4>
+    <p class="main">
+      闭包的第一个用途是使我们在函数外部能够访问到函数内部的变量。通过使用闭包，我们可以通过在外部调用闭包函数，从而在外部访问到函数内部的变量，可以使用这种方法来创建私有变量。函数的另一个用途是使已经运行结束的函数上下文中的变量对象继续留在内存中，因为闭包函数保留了这个变量对象的引用，所以这个变量对象不会被回收。其实闭包的本质就是作用域链的一个特殊的应用，只要了解了作用域链的创建过程，就能够理解闭包的实现原理。
+    </p>
+    <div align="center">
+      <img src="../01_introduce/img/suolong.png" alt="" width="400px" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      h2 {
+        font-size: 16px;
+      }
+      .fontFamily {
+        font-family: "宋体";
+      }
+      .fontSize {
+        font-size: 50px;
+      }
+      .fontWight {
+        font-weight: 600;
+      }
+      .fontStyle {
+        font-style: italic;
+      }
+      .font {
+        font: italic bold 60px "宋体";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      字体系列font-family
+      字体大小font-size
+        谷歌浏览器默认字体16px
+      字体粗细font-weight
+        normal正常字体，相当于400（后面没有单位）
+        bold粗体，相当于700
+      字体样式font-style
+        normal正常字体样式
+        italic 斜体
+      复合属性
+        font：font-style font-weight font-size font-family （不能变换顺序）
+        其中font-szie 和font-family不能省略
+     -->
+    <!-- 标题类字体大小比较特殊，需要单独指定大小 -->
+    <h2>悯农</h2>
+    <p class="fontFamily">锄禾日当午</p>
+    <p class="fontSize">汗滴禾下土</p>
+    <p class="fontWight">锄禾日当午</p>
+    <p class="fontStyle">汗滴禾下土</p>
+    <p class="font">锄禾日当午</p>
+    <p>汗滴禾下土</p>
+    <p>锄禾日当午</p>
+    <p>汗滴禾下土</p>
+  </body>
+</html>

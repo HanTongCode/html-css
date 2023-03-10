@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[name] {
+        width: 200px;
+        height: 200px;
+      }
+      input[type="password"] {
+        background-color: aqua;
+      }
+      /* 其值开头为value子字符串 */
+      input[class^="demo"] {
+        border: 10px solid #f80909;
+      }
+      /* i使大小写不敏感 */
+      input[class^="demo" i] {
+        border: 10px solid #f80909;
+      }
+      /* 其值结尾为value子字符串 */
+      input[class$="demo"] {
+        background: #f80909;
+      }
+      /* 其值的字符串中的任何地方，至少出现了一次value子字符串 */
+      input[class*="demo"] {
+        height: 30px;
+      }
+
+      /* 结构伪类选择器 */
+      ul li:first-child {
+        background-color: aqua;
+      }
+      ul li:last-child {
+        background-color: blue;
+      }
+      ul li:nth-child(3) {
+        background-color: pink;
+      }
+      ul li:nth-child(even) {
+        background-color: bisque;
+      }
+      ol li:nth-child(odd) {
+        background-color: blueviolet;
+      }
+      /* 只能是n */
+      ol li:nth-child(2n) {
+        background-color: burlywood;
+      }
+      /* nth-child 会把所有的盒子都排列序号 ,先找第几个孩子*/
+      /* section div:first-child {
+        background-color: #f80909;
+      }
+      section div:nth-child(1) {
+        background-color: #f80909;
+      } */
+      /* 先找标签 */
+      section div:nth-of-type(1) {
+        background-color: #f80909;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      1.利用属性选择器
+  
+     -->
+    <input type="text" />
+    <input type="text" name="" id="" />
+    <input type="password" name="" id="" />
+    <input type="text" class="demo1" />
+    <input type="text" class="demo2" />
+    <input type="text" class="demo3" />
+    <input type="text" class="Demo3" placeholder="woshio" />
+    <input type="text" class="1demo" />
+    <input type="text" class="2demo" />
+    <input type="text" class="3demo" />
+
+    <!-- 
+          2.结构伪类选择器
+     -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+    <section>
+      <p>1</p>
+      <div>2</div>
+      <div>3</div>
+    </section>
+  </body>
+</html>

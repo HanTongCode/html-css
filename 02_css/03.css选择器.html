@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        color: red;
+        font-size: 40px;
+      }
+      .red {
+        color: red;
+      }
+      #yellow {
+        color: yellow;
+      }
+      .font {
+        font-size: 60px;
+      }
+      p::first-line {
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      选择器分为基础选择器和复合选择器
+        -基础选择器由单个选择器组成
+            -标签选择器
+              能快速为页面中同类型的标签设置样式
+              不能设计差异化样式
+            -类选择器
+              样式点定义，结构类调用
+              多类名使用空格隔开
+              可以多次调用
+            -id选择器
+              样式#定义，结构id调用
+              只能调用一次，一般用于页面唯一性元素
+            -通配符选择器
+              选中页面中所有的元素
+     -->
+    <p>今天天气真不错</p>
+    <ul>
+      <li class="red">苹果</li>
+      <li id="yellow">香蕉</li>
+      <!-- <li id="yellow">葡萄</li> -->
+      <li class="red font">西瓜</li>
+      <li>橘子</li>
+    </ul>
+    <!-- 
+      ::first-line
+     -->
+    <p>
+      这是 我的 p
+      <br />
+      omygod
+    </p>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 
+      audio 向页面中引入外部的音频文件
+          音视频文件引入时，默认情况下不允许用户自己控制播放
+          属性：
+            -controls 是否允许用户控制播放
+            -autoplay 自动播放
+            -loop 循环播放
+     -->
+    <!-- <audio src="./source/638.wav " controls autoplay></audio> -->
+
+    <!-- 
+      除了在audio中使用src，还可以在source中使用src引入外部资源
+     -->
+    <!-- <audio controls>
+      浏览器不支持
+      <source src="./source/638.wav" type="" />
+       
+      ie8以下使用embed标签引入外部音频文件
+    
+    <embed src="./source/638.wav" type="" />
+    </audio> -->
+
+    <!-- 引入视频文件 -->
+    <video controls width="40%" poster="../img/lufei.jpeg">
+      <source src="./source/yys.mp4" />
+      <track src="text.vtt" kind="chapters" srclang="en" />
+    </video>
+  </body>
+</html>

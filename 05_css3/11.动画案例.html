@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        overflow: hidden;
+        width: 0;
+        height: 25px;
+        white-space: nowrap;
+        font-size: 20px;
+        background-color: aqua;
+        animation: move 2s steps(8) forwards;
+      }
+      @keyframes move {
+        from {
+          width: 0;
+        }
+        to {
+          width: 160px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">欢迎来到我的博客</div>
+  </body>
+</html>

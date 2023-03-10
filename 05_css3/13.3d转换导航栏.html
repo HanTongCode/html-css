@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+        width: 200px;
+        height: 60px;
+        margin: 0 auto;
+        background-color: aqua;
+        transform-style: preserve-3d;
+        transition: all 0.8s;
+        /* perspective: 500px; */
+        /* transform: rotateY(45deg); */
+      }
+      .demo1,
+      .demo2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 60px;
+        background-color: bisque;
+        line-height: 60px;
+        text-align: center;
+        transition: all 2s;
+        backface-visibility: hidden;
+      }
+      .demo1 {
+        z-index: 1;
+      }
+      .demo2 {
+        background-color: rgb(178, 27, 27);
+        transform: translate(-50%, -50%) translateY(30px) translateZ(-30px)
+          rotateX(-90deg);
+      }
+      /* .box:hover {
+        transform: rotateY(45deg);
+      } */
+      .box:hover {
+        transform: translateY(-30px) rotateX(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="demo1">导航栏</div>
+      <div class="demo2">翻转</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3 {
+        /* text-decoration: underline; */
+        /* text-decoration: none; */
+        /* text-decoration: overline; */
+        text-decoration: line-through;
+      }
+      p {
+        /* color: red; */
+        /* color: #ff0000; */
+        color: rgb(255, 0, 0);
+        /* text-align: center; */
+        text-indent: 2em;
+        line-height: 60px;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      文本属性可定义文本的外观
+        -文本的颜色color
+          预定义的颜色值
+          十六进制
+          rgb代码
+        -对齐文本text-align
+          设置元素内文本内容的水平对齐方式
+          left，right，center
+        -装饰文本text-decoration
+          可以给文本添加下划线、删除线、上划线等
+          none  没有装饰线
+          underline 下划线
+          overline上划线
+          line-through删除线
+        -文本缩进text-indent
+          段落的首行缩进
+          em是一个相对单位，就是当前元素font-size一个文字的大小。如果当前元素没有设置文字，则会按照父元素的1文字大小
+        -行间距line-hight
+          控制文字行与行之间的距离
+          行间距包括上间距，文本高度，下间距
+
+     -->
+    <div>
+      <h3>天气怎么样？</h3>
+      <p>今天天气真不错</p>
+      <a href="https://www.baidu.com" target="_blank">百度一下</a>
+      <p>
+        闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，创建的函数可以
+        访问到当前函数的局部变量。 闭包有两个常用的用途。
+        闭包的第一个用途是使我们在函数外部能够访问到函数内部的变量。通过使用闭包，我们可以通过在外部调用闭包函数，从而在外
+        部访问到函数内部的变量，可以使用这种方法来创建私有变量。
+        函数的另一个用途是使已经运行结束的函数上下文中的变量对象继续留在内存中，因为闭包函数保留了这个变量对象的引用，所以
+        这个变量对象不会被回收。
+        其实闭包的本质就是作用域链的一个特殊的应用，只要了解了作用域链的创建过程，就能够理解闭包的实现原理。
+      </p>
+    </div>
+  </body>
+</html>
