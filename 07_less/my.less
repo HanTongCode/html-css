@@ -1,10 +1,20 @@
 @color: pink;
 @font: 14px;
+@border: 1px + 5;
 .box1 {
   width: 200px;
   height: 200px;
   background-color: @color;
 }
-a {
-  color: @color;
+.box2 {
+  width: 200px;
+  height: 200px;
+  font-size: @font;
+  border: @border solid #170303;
+  a {
+    color: @color;
+    &:hover {
+      color: red;
+    }
+  }
 }

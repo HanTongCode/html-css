@@ -3,6 +3,15 @@
   height: 200px;
   background-color: pink;
 }
-a {
+.box2 {
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+  border: 6px solid #170303;
+}
+.box2 a {
   color: pink;
+}
+.box2 a:hover {
+  color: red;
 }
